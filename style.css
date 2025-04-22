@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #F2F7F8;
+    color: #3F5061;
+}
+.hamburger{
+    display: none;
+}
+header{
+    display: flex;
+    height: 85px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    a{
+        text-decoration: none;
+        color: #3F5061;
+        margin-right: 50px;
+        font-weight: bold;
+    }
+}
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        margin-right: 20px;
+        width: 10rem;
+    }
+}
+.header2{
+    a{
+        border: 1px solid black;
+       padding: 15px 25px;
+       border-radius: 10px;
+       margin-right: 5px;
+    }
+    
+}
+button{
+    padding: 15px 25px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+main{
+    display: flex;
+   max-width: 100%;
+   justify-content: space-between;
+   margin: 0 auto;
+   padding: 40px 60px;
+   
+   a{
+    text-decoration: none;
+    color: white;
+    background-color:#0089FF ;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius:20px ;
+    font-weight: bold;
+    margin-bottom: 20px;
+   }
+   a:hover{
+    background-color: black;
+   }
+}
+.hero-text{
+    h1{
+        font-size: 48px;
+        width: 68%;
+        color: #122231;
+        
+    }
+    p{
+        width: 65%;
+        font-size: 20px;
+        line-height: 1.5;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+  
+}
+
+
+@media only screen and (max-width:768px) {
+    header{
+        width: 100%;
+        padding-left: 20px;
+        
+        a{
+            display: none;
+        }
+    }
+    .header2{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        max-width: 30px;
+        margin-left: 320px;
+        
+    }
+    .responsive{
+        display: flex;
+        
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        img{
+            max-width: 100%;
+        }
+    }
+    .hero-text{
+        text-align: center;
+
+        h1{
+           max-width: 100%;
+           text-align: center;
+           margin-left: 70px;
+        }
+        p{
+            width: 100%;
+        }
+    }
+}
