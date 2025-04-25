@@ -291,10 +291,12 @@ main {
   }
  }
  .diverse{
-  text-align: center;
- height: 150vh;
- padding-top: 200px;
   background-color: white;
+  height: 180vh;
+ }
+ .diverse-main{
+  text-align: center;
+ padding-top: 200px;
   h1{
     font-size: 40px ;
   }
@@ -305,14 +307,71 @@ main {
   }
  }
  .position-parent{
+  display: flex;
   width: 1153px;
   height: 500px;
   background-color: #7913E5;
-  position: relative;
+  
   border-radius: 30px;
   margin: 0 auto;
   margin-top: 40px;
+  color: white;
+  padding: 30px 40px;
+  h1{
+    font-size: 36px;
+
+  }
+  p{
+    font-size: 20px;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 12rem;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
  }
+ .position-img{
+  height: 470px;
+ }
+ .video-block{
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  
+  h1{
+    font-size: 48px;
+  }
+  p{
+    font-size: 24px;
+    width: 70%;
+    margin: 30px auto;
+    ma
+  }
+ }
+ .video iframe{
+  border-radius: 20px;
+  border: 10px solid white;
+  
+ }
+ .olabisi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  h1{
+    font-size: 30px;
+    width: 70%;
+  }
+
+  img{
+    width: 450px;
+  }
+ }
+
 
 
 @media only screen and (max-width: 768px) {
@@ -344,8 +403,11 @@ main {
   }
   .hero-text {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
 
     h1 {
+      font-size: 30px;
       
       margin-left: 70px;
     }
@@ -365,4 +427,58 @@ main {
     display: flex;
     flex-direction: column;
   }
+  .position-parent{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding-bottom: 0;
+    
+    .first-child{
+      text-align: center;
+       margin: 0 auto;
+        width: 100%;
+    }
+    p{
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      padding-bottom: 2rem;
+      color: 
+      rgb(254, 214, 241)
+      ;
+    }
+    h1{
+      font-size: 30px;
+    }
+   
+  
+  }
+  .position-img{
+    height: 400px;
+   }
+   .video iframe{
+   width: 500px;
+    
+   }
+   .olabisi{
+    display: flex;
+    flex-direction: column-reverse;
+    h1{
+      width: 80%;
+      font-size: 28px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .button-set{
+     margin-top: 30px;
+     margin-left: 150px;
+    
+     
+     
+     
+     
+    }
+
+   }
 }
